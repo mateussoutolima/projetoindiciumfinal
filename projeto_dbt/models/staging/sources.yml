@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: adventure_works_elt
+    description: Essa é a fonte de dados do nosso ERP, criada através do Stitch
+    tables:
+      - name: salesorderheader
+      - name: product
+      - name: productcategory
+      - name: productsubcategory
+      - name: productlistpricehistory
+      - name: address
+      - name: stateprovince
+      - name: countryregion
+      - name: salesorderheadersalesreason
+      - name: person
+      - name: salesreason
+      - name: salesorderdetail
+      - name: creditcard
+      - name: personcreditcard
+     

@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: fact_venda
+    description: Tabela compilada de vendas
+
+    columns:
+      - name: fk_produto
+        description: Chave estrangeira da tabela dim_produtos
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_endereco
+        description: Chave estrangeira da tabela dim_regiao
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_detalhepedido
+        description: Chave estrangeira da tabela dim_venda
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_cliente
+        description: Chaave estrangeira da tabela dim_clientes
+        tests:
+          - unique
+          - not_null
